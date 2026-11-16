@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#101820" />
+    <meta name="description" content="Game lái xe 3D thành phố lấy cảm hứng từ Hà Nội." />
+    <title>Hanoi Drive 3D</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="hud">
+        <div class="brand">HANOI DRIVE <span>3D</span></div>
+        <div class="readout"><b id="speed">0 km/h</b><span id="district">Hoàn Kiếm – phố cổ</span></div>
+        <div class="hint">WASD / phím mũi tên để lái · Kéo ngang để xoay camera</div>
+        <div id="status">Đang khởi tạo thành phố…</div>
+      </div>
+      <div class="touch-controls" aria-label="Điều khiển cảm ứng">
+        <button data-action="forward" aria-label="Tiến">▲</button>
+        <div class="touch-row">
+          <button data-action="left" aria-label="Sang trái">◀</button>
+          <button data-action="back" aria-label="Lùi">▼</button>
+          <button data-action="right" aria-label="Sang phải">▶</button>
+        </div>
+      </div>
+      <div class="mobile-tip">Chạm giữ nút để lái · Kéo màn hình để xoay camera</div>
+      <div id="error" role="alert"></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
